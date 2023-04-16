@@ -28,6 +28,10 @@ h1{
     text-transform: uppercase;
 }
 
+h2{
+    margin-left: 5%;
+}
+
 .indexGrid{
     display: grid;
     gap: 1rem;
@@ -64,22 +68,7 @@ h1{
     
 }
 
-.designGridImg{
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 0.1fr);
-    margin-left: 5%;
-    /* margin-right: 5%; */
-}
 
-
-.designGridImg img{
-    max-height: 100%;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
 
 /* responsive design for mobile application */
 /* indexGrid{
