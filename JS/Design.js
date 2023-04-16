@@ -14,17 +14,23 @@ function loadDesign(){
     subheading.innerText = "Rough Sketches";
     title.innerText = "Design";
 
-    let imageSection = document.createElement("section")
+    let imageSketchSection = document.createElement("section")
 
-    article.append(imageSection);
-    imgSrcArray = ["","",""];
+    article.append(imageSketchSection);
 
-    for(let i = 0; i < imgSrcArray.length; i++)
+    //sketch image arrays
+    imgSrcDArray = ["DBlogPosts","DHome","DLogin","DSignIn, DTheory", "DWireframes"];
+    imgSrcMArray = ["MBlogPosts","MHome","MLogin","MSignUp, DTheory", "MWireframes"];
+
+
+
+    for(let i = 0; i < imgSrcDArray.length; i++)
     {
+        imageSketchSection.classList.add("designGridImg");
         let img = document.createElement("img")
-        imageSection.append(img);
-        let pathPrefix = "Images/"
-        img.src = pathPrefix+ imgSrcArray[i];
+        imageSketchSection.append(img);
+        let pathPrefix = "Images/Wireframes/"
+        img.src = pathPrefix+ imgSrcDArray[i]+".png";
        
     }
 

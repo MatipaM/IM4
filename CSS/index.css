@@ -1,3 +1,8 @@
+html{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgb(30,55,183);
+}
+
 p{
     padding-left: 5%;
 }
@@ -57,6 +62,23 @@ h1{
 
 .wireframeBtn:hover{
     
+}
+
+.designGridImg{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 0.1fr);
+    margin-left: 5%;
+    /* margin-right: 5%; */
+}
+
+
+.designGridImg img{
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 /* responsive design for mobile application */
