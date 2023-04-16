@@ -1,0 +1,65 @@
+p{
+    padding-left: 5%;
+}
+
+ul{
+    list-style-type: none;
+    /* text-align: left; */
+    padding-left: 5%;
+}
+
+li
+{
+    display: inline;
+    padding-right: 5%;
+}
+
+a:hover{
+    color: purple;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.indexGrid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.referenceContainer{
+    background-color: lightslategray;
+    border-radius: 5%;
+}
+
+.referenceTitle{
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.roughSketchGrid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.wireframeBtn{
+
+}
+
+.wireframeBtn:hover{
+    
+}
+
+/* responsive design for mobile application */
+/* indexGrid{
+    display: block;
+} */
