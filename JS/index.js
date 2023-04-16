@@ -1,8 +1,4 @@
 
-// let article;
-
-function loadIndex()
-{
     console.log("index loaded");
 
     let main = document.getElementById("main");
@@ -39,4 +35,4 @@ function loadIndex()
        
         p.innerText = paragraphContent;
     }
-}
+

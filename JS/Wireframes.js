@@ -1,10 +1,11 @@
-function loadWireframes()
-{
+    console.log("loading wireframe");
 
     let slideNumber;
+    let article = document.createElement("article");
+    main.append(article);
 
     let wireframeSection = document.createElement("section");
-    main.append(wireframeSection);
+    article.append(wireframeSection);
     wireframeSection.classList.add("wireframeSection")
 
     let h1 = document.createElement("h1");
@@ -55,6 +56,7 @@ function loadWireframes()
     {
 
         let button = document.createElement("a");
+        button.classList.add("btnSection");
         let text;
         let iconSrc;
 
@@ -63,12 +65,11 @@ function loadWireframes()
                 text = "Mobile Version";
                 break;
             case 1:
-                text = "Wireframes";
-                iconSrc = null; //add arrow
+                text = "Rough Sketches";
+                iconSrc = "Images/Icons/LeftArrow.png"; 
                 break;
         }
 
         button.innerText = text;
         buttonSection.append(button);
     }
-}

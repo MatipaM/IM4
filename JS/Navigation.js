@@ -1,9 +1,5 @@
-
-    
-    loadIndex();
-    
     const navPages = ["HomePage", "Design","Theory", "Internet Artwork", "References"];
-    const navMenu = ["index.html", "References.html"];
+    const navMenu = ["index", "Sketch", "Theory", "Art", "References"];
    
     let header = document.getElementById("header");
     header.classList.add("h-card");
@@ -58,7 +54,8 @@
 
         a.onclick = function()
         {
-            loadPage(i);
+            console.log(i);
+            location.href = navMenu[i]+".html"; 
         }
     }
 
@@ -67,25 +64,31 @@
     //xampp server - download
     //mysql
 
-    function loadPage(i)
-    {
-        article.remove();
-        switch(i)
-        {
-            case 0:
-                loadIndex();
-                break;
-            case 1:
-                loadDesign();
-                break;
-            case 2:
-                loadTheory();
-                break;
-            case 3:
-                loadInternetArtwork();
-                break;
-            case 4:
-                loadReferences();
-                break;
-        }
-    }
+    // function loadPage(i)
+    // {
+    //     article.remove();
+    //     let location = "";
+
+    //     switch(i)
+    //     {
+    //         case 0:
+    //             location = "index";
+    //             //loadIndex();
+    //             break;
+    //         case 1:
+    //             location = "Sketch";
+    //             // loadDesign();
+    //             break;
+    //         case 2:
+    //             location = "Theory";
+    //             break;
+    //         case 3:
+    //             location = "art";
+    //             break;
+    //         case 4:
+    //             location = "references";
+    //             break;
+    //     }
+
+    //     location.href = location+".html";
+    // }

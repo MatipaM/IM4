@@ -1,5 +1,5 @@
-function loadDesign(){
-    //clear main
+
+    console.log("design loaded");
 
     let main = document.getElementById("main");
     let title = document.createElement("h1");
@@ -38,7 +38,7 @@ function loadDesign(){
     }
 
     let btnSection = document.createElement("section");
-    main.append(btnSection);
+    article.append(btnSection);
 
     btnSection.classList.add("btnSection");
     let button = document.createElement("a");
@@ -51,9 +51,10 @@ function loadDesign(){
 
     btnSection.append(button);
 
-}
+        button.onclick = function()
+    {
+        location.href = "Wireframes.html";
+    }
 
-button.onclick = function()
-{
-    loadWireframes();
-}
+
+

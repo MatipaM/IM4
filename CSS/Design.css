@@ -21,7 +21,7 @@
 
 }
 
-.buttonSection{
+.btnSection{
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
@@ -30,21 +30,20 @@
     margin-top: 5%;
 }
 
-.btnSection a{
+.btnSection a:nth-child(1){
     background-color: rgba(255,255,255,0.5);
     border-radius: 5%;
 
     
     margin-left: 5%;
 
-    padding-top: 3%;
+    padding-top: 0%;
     padding-bottom: 1%;
     padding-left: 5%;
     width: 30%;
-    grid-template-columns: 2;
+    /* grid-template-columns: 2; */
 
     text-align: right;
-    /* margin-left: 60%; */
 }
 
 .btnSection a:hover{
@@ -54,12 +53,21 @@
 .btnIcon{
     margin-top: 5%;
 
-    max-width: 4%;
-    max-height: 4%;
+    max-width: 20%;
+    max-height: 20%;
     width: auto;
     height: auto;
     padding-left: 5%;
     padding-right: 2%;
+}
+
+.wireframeGrid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
 }
 
 
