@@ -1,5 +1,5 @@
     const navPages = ["HomePage", "Design","Theory", "Internet Artwork", "References"];
-    const navMenu = ["index", "Sketch", "Theory", "Art", "References"];
+    const navMenu = ["index", "Sketch", "BlogPosts", "Art", "References"];
    
     let header = document.getElementById("header");
     header.classList.add("h-card");

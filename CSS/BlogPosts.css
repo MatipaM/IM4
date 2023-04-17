@@ -1,0 +1,26 @@
+.blogsGrid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.blogsGrid:nth-child(1)
+{
+    margin: 1%;
+}
+
+@media (max-width: 512px){ 
+   
+    .blogsGrid{
+        display: block;
+    }
+     }
+   
+     @media (max-width: 1024px){ 
+ 
+     
+     }

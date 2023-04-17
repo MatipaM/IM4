@@ -1,16 +1,21 @@
 html{
     font-family: 'Noto Sans', sans-serif;
     background-color: rgb(30,55,183);
+    cursor: auto;
 }
 
 p{
-    padding-left: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 1%;
+    border-radius: 5%;
 }
 
 ul{
     list-style-type: none;
-    /* text-align: left; */
-    padding-left: 5%;
+    margin-right: 5%;
+    margin-left: 10%;
 }
 
 li
@@ -19,13 +24,23 @@ li
     padding-right: 5%;
 }
 
+a{
+    background-color: rgba(255,255,255,0.5);
+    padding: 0.5%;
+    border-radius: 5%;
+    width: 20%;
+}
+
 a:hover{
     color: purple;
+    background-color: rgba(255,255,255,0.8);
+    
 }
 
 h1{
     text-align: center;
     text-transform: uppercase;
+    font-size: 200%;
 }
 
 h2{
@@ -38,11 +53,32 @@ h2{
     grid-template-columns: repeat(2, 1fr);
     margin-top: 5%;
     margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-.referenceContainer{
-    background-color: lightslategray;
+.indexGrid :nth-child(1)
+{
+    background-color: rgba(255,255,255,0.5);
+    padding: 2%;
     border-radius: 5%;
+}
+
+.indexGrid :nth-child(2)
+{
+    background-color: rgba(255,255,255,0.5);
+    padding: 2%;
+    border-radius: 5%;
+}
+
+.referenceContainer p{
+    background-color: rgba(255,255,255,0.5);;
+    border-radius: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 90%;
+    margin-left: 3%;
+    margin-right: 5%;
 }
 
 .referenceTitle{
@@ -69,8 +105,17 @@ h2{
 }
 
 
+@media (max-width: 512px){ 
+   ul{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 5%;
+   }
 
-/* responsive design for mobile application */
-/* indexGrid{
-    display: block;
-} */
+    }
+  
+    @media (max-width: 1024px){ 
+
+    
+    }

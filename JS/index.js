@@ -24,10 +24,10 @@
         switch(i)
         {
             case 0:
-                paragraphContent = "My website is about...(what i am building)";
+                paragraphContent = "Welcome to my internet art website. This website contains weekly reflections on class lectures, as well as the process behind my internet artwork and how I created it.";
                 break;
             case 1:
-                paragraphContent = "I wanted to create this because...";
+                paragraphContent = "The internet artwork I created relies heavily on user interaction, therefore please engage with it, as much as you would like :).";
                 break;
             default:
                 paragraphContent = "loading error";

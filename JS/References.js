@@ -1,6 +1,4 @@
-function loadReferences(){
-
-    article = document.createElement("article");
+    let article = document.createElement("article");
   
     let main = document.getElementById("main");
     main.append(article);
@@ -34,4 +32,3 @@ function loadReferences(){
 
 
 
-}
