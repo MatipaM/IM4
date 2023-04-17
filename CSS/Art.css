@@ -1,7 +1,48 @@
-.container{
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 5%;
+}
+
+canvas{
+    /* height: 100%;
+    width: 100% */
+    margin-left: 5%;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    background-color: white;
+}
+
+h2{
+    margin-left: 25%;
+}
+
+#toolbar{
+    display: flex;
+    flex-direction: column;
+    /* padding: 5%; */
+    width: 20%;
+    /* background-color: #202020; */
+}
+
+#toolbar *{
+    margin-bottom: 6px;
+}
+
+#toolbar input{
+    width: 100%;
+}
+
+#clear{
     background-color: rgba(255,255,255,0.5);
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+    margin: 5%;
+    border-radius: 5%;
+    width: 20%;
+}
+
+#clear :hover{
+    background-color: rgba(255,255,255,0.8);
 }
