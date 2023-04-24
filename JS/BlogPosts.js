@@ -15,7 +15,7 @@ let blogSection = document.createElement("section")
 article.append(blogSection);
 
 //sketch image arrays
-let BlogImgArray = ["", "", "MHome", "InternetArt",];
+let BlogImgArray = ["BlogPost3.jpg", "BlogPost4.jpg", "MHome.png", "InternetArt.png",];
 // let pages = ["W3", "W4", "W5", "W6", "W7", "UI", "Wireframes"];
 let pages = ["W3", "W4", "UI", "Wireframes"];
 
@@ -31,7 +31,7 @@ for(let i = 0; i < BlogImgArray.length; i++)
     btn.append(subheading);
     btn.append(img); 
     let pathPrefix = "Images/Blogs/"
-    img.src = pathPrefix+ BlogImgArray[i]+".jpg";
+    img.src = pathPrefix+ BlogImgArray[i];
 
     switch(i)
     {
@@ -58,8 +58,6 @@ for(let i = 0; i < BlogImgArray.length; i++)
             subheading.innerText = "Internet Art Esssay";
             break;
     }
-
-    img.src = "Images/Blogs/"+BlogImgArray[i]+".png";
     console.log(i);
 
     btn.onclick = function()
@@ -70,6 +68,15 @@ for(let i = 0; i < BlogImgArray.length; i++)
    
 }
 
+citeArr = ["Redirect notice (no date) Google. Google. Available at: https://www.google.com/url?sa=i (Accessed: April 24, 2023). ",
+"MyBib Contributors (2019). Harvard Referencing Generator – FREE – (updated for 2019). [online] MyBib. Available at: https://www.mybib.com/tools/harvard-referencing-generator."]
+
+for(let i=0; i<citeArr.length; i++)
+{
+    let cite = document.createElement("cite");
+    cite.innerText = citeArr[i];
+    main.append(cite);
+}
 
 createFooter();
 
