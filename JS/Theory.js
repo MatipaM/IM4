@@ -163,10 +163,9 @@ for(let i=0; i<3; i++)
     {
         if(i==0)
         {
-            if(i<=0)
+            if(blogNum<=0)
             {
-                i=(theoryArr.length-1);
-                blogNum=i;
+                blogNum=(theoryArr.length-1);
             } else{
                 blogNum--;
             }
@@ -180,10 +179,9 @@ for(let i=0; i<3; i++)
             i=theoryArr[blogNum];
         }else if(i==2){
 
-            if(i>=((theoryArr.length)-1))
+            if(blogNum==((theoryArr.length)-1))
             {
                 console.log("at array end")
-                i=0;
                 blogNum=0;
             } else{
                 console.log("not at array end")
