@@ -15,7 +15,8 @@ let blogSection = document.createElement("section")
 article.append(blogSection);
 
 //sketch image arrays
-let BlogImgArray = ["HomePage", "Design", "Theory", "References"];
+let BlogImgArray = ["", "", "", "", "", "MHome", "InternetArt",];
+let pages = ["W3", "W4", "W5", "W6", "W7", "UI", "Wireframes"];
 
 for(let i = 0; i < BlogImgArray.length; i++)
 {
@@ -34,50 +35,46 @@ for(let i = 0; i < BlogImgArray.length; i++)
     switch(i)
     {
         case 0:
-            subheading.innerText = "Blog Post 1";
-            loadPage = "Blog1";
+            subheading.innerText = "Week 3 Relection";
+
             break;
         case 1:
-            subheading.innerText = "Blog Post 2";
-            loadPage = "Blog2";
+            subheading.innerText = "Week 4 Relection";
             break;
         case 2:
-            subheading.innerText = "Blog Post 3";
-            loadPage = "Blog3";
+            subheading.innerText = "Week 5 Relection";
             break;
         case 3:
-            subheading.innerText = "Blog Post 4";
-            loadPage = "Blog4";
+            subheading.innerText = "Week 6 Relection";
             break;
         case 4:
-            subheading.innerText = "Blog Post 5";
-            loadPage = "Blog5";
+            subheading.innerText = "Week 7 Relection";
             break;
         case 5:
-            subheading.innerText = "Blog Post 6";
-            loadPage = "Blog6";
+            subheading.innerText = "UI/UX Critical Analysis";
             break;
         case 6:
-            subheading.innerText = "Blog Post 7";
-            loadPage = "Blog7";
+            subheading.innerText = "Internet Art Esssay";
             break;
         case 7:
             subheading.innerText = "Blog Post 8";
-            loadPage = ""; //UPDATE NAME
             break;
 
     }
 
+    img.src = "Images/Blogs/"+BlogImgArray[i]+".png";
+    console.log(i);
+
     btn.onclick = function()
     {
-        location.href = loadPage+".html";
+        location.href = pages[i]+".html";
     }
     
    
 }
 
 
-
+createFooter();
 
 
 

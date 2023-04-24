@@ -92,5 +92,7 @@
         location.href = "Wireframes.html";
     }
 
+createFooter();
+
 
 

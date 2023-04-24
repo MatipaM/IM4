@@ -1,7 +1,19 @@
 html{
     font-family: 'Noto Sans', sans-serif;
-    background-color: rgb(30,55,183);
+    background-color: rgb(66, 86, 183);
+    /* background-image: "Images/ArtCanvas.jpeg"; */
     cursor: auto;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+main{
+    min-height: 100vh; /* set height to 100% of viewport */
+    display: flex;
+    flex-direction: column;
 }
 
 p{
@@ -22,7 +34,9 @@ li
 {
     display: inline;
     padding-right: 5%;
+    margin-top: 1%;
 }
+
 
 a{
     background-color: rgba(255,255,255,0.5);
@@ -104,6 +118,37 @@ h2{
     
 }
 
+.iLink{
+    padding-right: 5%;
+}
+
+footer{
+    padding: 1%;
+    background-color: rgba(255,255,255,0.5);
+    margin-top: auto; 
+}
+
+.active{
+    color: purple;
+}
+
+.homeImg{
+    max-width: 47%;
+    max-height: 25%;
+    /* height: auto;
+    width: auto; */
+    border-radius: 5%;
+}
+
+h3{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+cite{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 @media (max-width: 512px){ 
    ul{

@@ -1,17 +1,47 @@
 .blogsGrid{
     display: grid;
-    gap: 1rem;
+    row-gap: 5%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
+    margin-left: 5%;  
+    margin-bottom: 5%; 
 }
 
 .blogsGrid:nth-child(1)
 {
-    margin: 1%;
+    margin-bottom: 5%;
+    width: 400%;
 }
+
+.blogsGrid:nth-child(2)
+{
+}
+
+.blogsGrid:nth-child(3)
+{
+}
+
+.blogsGrid:nth-child(4)
+{
+}
+
+img{
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 5%;
+}
+
+/* .blogsGrid:nth-child(1)
+{
+
+}
+
+.blogsGrid:nth-child(1)
+{
+   width: 100%;
+} */
 
 @media (max-width: 512px){ 
    
