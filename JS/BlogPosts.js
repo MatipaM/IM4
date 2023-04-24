@@ -15,8 +15,9 @@ let blogSection = document.createElement("section")
 article.append(blogSection);
 
 //sketch image arrays
-let BlogImgArray = ["", "", "", "", "", "MHome", "InternetArt",];
-let pages = ["W3", "W4", "W5", "W6", "W7", "UI", "Wireframes"];
+let BlogImgArray = ["", "", "MHome", "InternetArt",];
+// let pages = ["W3", "W4", "W5", "W6", "W7", "UI", "Wireframes"];
+let pages = ["W3", "W4", "UI", "Wireframes"];
 
 for(let i = 0; i < BlogImgArray.length; i++)
 {
@@ -41,25 +42,21 @@ for(let i = 0; i < BlogImgArray.length; i++)
         case 1:
             subheading.innerText = "Week 4 Relection";
             break;
+        // case 2:
+        //     subheading.innerText = "Week 5 Relection";
+        //     break;
+        // case 3:
+        //     subheading.innerText = "Week 6 Relection";
+        //     break;
+        // case 4:
+        //     subheading.innerText = "Week 7 Relection";
+        //     break;
         case 2:
-            subheading.innerText = "Week 5 Relection";
-            break;
-        case 3:
-            subheading.innerText = "Week 6 Relection";
-            break;
-        case 4:
-            subheading.innerText = "Week 7 Relection";
-            break;
-        case 5:
             subheading.innerText = "UI/UX Critical Analysis";
             break;
-        case 6:
+        case 3:
             subheading.innerText = "Internet Art Esssay";
             break;
-        case 7:
-            subheading.innerText = "Blog Post 8";
-            break;
-
     }
 
     img.src = "Images/Blogs/"+BlogImgArray[i]+".png";

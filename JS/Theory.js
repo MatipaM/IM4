@@ -1,28 +1,30 @@
 let article = document.createElement("article");
 main.append(article);
 
-theoryArr = ["W3, W4", "W5", "W6", "W7", "UI", "Wireframes"];
+// theoryArr = ["W3, W4", "W5", "W6", "W7", "UI", "Wireframes"];
+
 
 let h1 = document.createElement("h1");
 h1.innerText = "Theory";
 article.append(h1);
 
+theoryArr = ["W3", "W4", "UI", "Wireframes"];
 
-
-let pArray =[];
 let blogNum;
 
-for(let index =0; index<theoryArr.size; index++)
+console.log(theoryArr.length)
+for(let index =0; index<theoryArr.length; index++)
 {
     if(window.location.href.includes(theoryArr[index]))
     {
         blogNum = index;
+        console.log(blogNum);
     } 
 }
 
-loadImages();
+loadImages(blogNum);
 
-function loadImages()
+function loadImages(blogNum)
 {
 let section = document.createElement("section");
 main.append(section);
@@ -67,10 +69,13 @@ let uiRef= ["Design Issues, Vol. 24, No. 3, Interaction Design Research in Human
 "Design Issues, Vol. 24, No. 3, Interaction Design Research in Human-Computer Interaction (Summer, 2008), pp. 85-107 (23 pages)",
 "Cherry, K. (2023) What does the Color Purple Mean? Available At https://www.verywellmind.com/the-color-psychology-of-purple-2795820 (Accessed 17 April 2023)"];
 
-  
+let pArray = []; 
+let pArrayRef = []; 
+console.log(blogNum);
 
 switch(blogNum)
 {
+
     case 0:
         h2.innerText = "Blog Post - Week 3";
         pArray = blog3;
@@ -82,27 +87,27 @@ switch(blogNum)
         pArray = blog4;
         pArrRef = blog4Ref;
         break;
+    // case 2:
+    //     h2.innerText = "Blog Post - Week 5";
+    //     pArray = blog5;
+    //     pArrRef = blog5Ref;
+    //     break;
+    // case 3:
+    //     h2.innerText = "Blog Post - Week 6";
+    //     pArray = blog6;
+    //     pArrRef = blog6Ref;
+    //     break;
+    // case 4:
+    //     h2.innerText = "Blog Post - Week 7";
+    //     pArray = blog7;
+    //     pArrRef = blog7Ref;
+    //     break;
     case 2:
-        h2.innerText = "Blog Post - Week 5";
-        pArray = blog5;
-        pArrRef = blog5Ref;
-        break;
-    case 3:
-        h2.innerText = "Blog Post - Week 6";
-        pArray = blog6;
-        pArrRef = blog6Ref;
-        break;
-    case 4:
-        h2.innerText = "Blog Post - Week 7";
-        pArray = blog7;
-        pArrRef = blog7Ref;
-        break;
-    case 5:
         h2.innerText = "Internet Art";
         pArray = art;
         pArrRef = artRef;
         break;
-    case 6:
+    case 3:
         h2.innerText = "User Interface and User Experience";
         pArray = ui;
         pArrRef = uiRef;
@@ -160,28 +165,34 @@ for(let i=0; i<3; i++)
         {
             if(i<=0)
             {
-                i=theoryArr.length-1;
+                i=(theoryArr.length-1);
+                blogNum=i;
             } else{
                 blogNum--;
             }
     
+            console.log(blogNum)
             section.remove();
-            loadImages();
+            loadImages(blogNum);
    
         } else if(i==1)
         {
             i=theoryArr[blogNum];
         }else if(i==2){
 
-            if(i>=theoryArr.length-1)
+            if(i>=((theoryArr.length)-1))
             {
+                console.log("at array end")
                 i=0;
+                blogNum=0;
             } else{
+                console.log("not at array end")
                 blogNum++;
             }
     
+            console.log(blogNum)
             section.remove();
-            loadImages();
+            loadImages(blogNum);
         }
     }
 }
